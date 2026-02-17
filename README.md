@@ -1,85 +1,83 @@
-# Mall-Customer-Segmentation-Data
-Customer Segmentation using K-Means Clustering
-Project Overview
+# Customer Segmentation using K-Means Clustering
 
-This project implements K-Means Clustering to segment retail store customers based on their purchasing behavior. The objective is to group customers into distinct segments using their Annual Income and Spending Score, enabling data-driven marketing and business strategies.
+## Project Overview
 
-Problem Statement
+This project implements K-Means Clustering to segment retail store customers based on their purchasing behavior. The objective is to group customers into distinct segments using Annual Income and Spending Score, enabling data-driven marketing and strategic decision-making.
+
+---
+
+## Problem Statement
 
 Develop a K-Means clustering model to group customers of a retail store based on their purchase history and behavioral patterns.
 
-Technologies Used
+---
 
-Python
+## Technologies Used
 
-Pandas
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-NumPy
+---
 
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-Dataset
+## Dataset
 
 File: Mall_Customers.csv
 
 Features Used:
+- Annual Income (k$)
+- Spending Score (1–100)
 
-Annual Income (k$)
+---
 
-Spending Score (1–100)
+## Methodology
 
-Methodology
+1. Data Loading and Preprocessing
+2. Feature Selection
+3. Data Standardization using StandardScaler
+4. Determination of Optimal Clusters using the Elbow Method
+5. Application of K-Means Clustering
+6. Visualization of Customer Segments
 
-Data loading and preprocessing
+---
 
-Feature selection
-
-Data standardization using StandardScaler
-
-Determination of optimal clusters using the Elbow Method
-
-Application of K-Means clustering
-
-Visualization of customer segments
-
-Model Selection
+## Model Selection
 
 The Elbow Method was applied to determine the optimal number of clusters.
-Based on the WCSS curve, the optimal number of clusters selected was:
 
-K = 5
+Optimal Number of Clusters Selected: K = 5
 
-Results
+---
 
-The algorithm successfully segmented customers into five distinct groups, including:
+## Results
 
-High Income – High Spending
+The algorithm successfully segmented customers into five distinct groups:
 
-High Income – Low Spending
+- High Income – High Spending
+- High Income – Low Spending
+- Low Income – High Spending
+- Low Income – Low Spending
+- Average Customers
 
-Low Income – High Spending
+These segments help businesses design targeted marketing strategies, improve customer engagement, and optimize revenue generation.
 
-Low Income – Low Spending
+---
 
-Average Customers
+## How to Run the Project
 
-These segments can help businesses design targeted marketing strategies, improve customer engagement, and optimize revenue generation.
+1. Install required dependencies:
 
-How to Run the Project
+   pip install -r requirements.txt
 
-Install required dependencies:
+2. Run the Jupyter Notebook:
 
-pip install -r requirements.txt
+   customer_segmentation.ipynb
 
+---
 
-Run the Jupyter Notebook:
+## Conclusion
 
-customer_segmentation.ipynb
-
-Conclusion
-
-K-Means clustering effectively identified meaningful customer segments based on purchasing behavior. This project demonstrates the practical application of unsupervised machine learning in business analytics and customer strategy development.
+K-Means clustering effectively identified meaningful customer segments based on purchasing behavior. This project demonstrates the practical application of unsupervised machine learning techniques in business analytics.
